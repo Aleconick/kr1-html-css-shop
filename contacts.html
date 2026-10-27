@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Задушевный книжный</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo" href="index.html">Задушевный книжный</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Книга</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        
+        <!-- Двухколоночная сетка: слева инфо, справа форма -->
+        <div class="contacts-grid">
+          
+          <!-- Левая колонка: Информация -->
+          <div class="contacts-info">
+            <h1 class="section__title">Свяжитесь с нами</h1>
+            <p style="color: var(--color-muted); margin-bottom: 30px;">
+              Мы всегда рады помочь с выбором книги или ответить на любые вопросы.
+            </p>
+
+            <div class="contact-block">
+              <h3 class="contact-block__title">Телефон</h3>
+              <p class="contact-block__text"><a href="tel:+78001234567">8 800 123-45-67</a></p>
+            </div>
+
+            <div class="contact-block">
+              <h3 class="contact-block__title">Электронная почта</h3>
+              <p class="contact-block__text"><a href="mailto:hello@zadushevny.ru">hello@zadushevny.ru</a></p>
+            </div>
+
+            <div class="contact-block">
+              <h3 class="contact-block__title">Режим работы</h3>
+              <p class="contact-block__text">Ежедневно с 10:00 до 20:00</p>
+            </div>
+            
+            <div class="contact-block">
+              <h3 class="contact-block__title">Мы в соцсетях</h3>
+              <p class="contact-block__text">
+                <a href="#">Telegram</a> &nbsp;•&nbsp; <a href="#">ВКонтакте</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Правая колонка: Форма обратной связи -->
+          <div class="form-wrapper" style="margin: 0;">
+            <h2 class="section__title" style="font-size: 1.5rem; margin-bottom: 20px;">Напишите нам</h2>
+            <form class="order-form" action="#" method="post">
+              
+              <div class="order-form__field">
+                <label class="order-form__label" for="contact-name">Ваше имя *</label>
+                <input class="order-form__input" id="contact-name" name="name" type="text" required placeholder="Иван">
+              </div>
+
+              <div class="order-form__field">
+                <label class="order-form__label" for="contact-email">E-mail *</label>
+                <input class="order-form__input" id="contact-email" name="email" type="email" required placeholder="ivan@example.com">
+              </div>
+
+              <div class="order-form__field">
+                <label class="order-form__label" for="contact-message">Сообщение *</label>
+                <textarea class="order-form__input" id="contact-message" name="message" rows="4" required placeholder="Чем мы можем вам помочь?"></textarea>
+              </div>
+
+              <div class="order-form__check">
+                <input id="contact-consent" name="consent" type="checkbox" required>
+                <label for="contact-consent">Я согласен на обработку персональных данных *</label>
+              </div>
+
+              <button class="button" type="submit" style="width: 100%;">Отправить сообщение</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__text">© 2026 Ваш «Задушевный книжный». К читателю — с душой.</p>
+      <a class="site-footer__link" href="#top">Наверх</a>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

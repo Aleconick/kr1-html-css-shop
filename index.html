@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задушевный книжный — книжная лавка</title>
+  <meta name="description" content="Книжная лавка «Задушевный книжный»: художественная литература, фантастика, нон-фикшн и детские книги.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo" href="index.html">Задушевный книжный</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">Книга</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__label">Книжная лавка</p>
+          <h1 class="hero__title">Книги, которые остаются с вами</h1>
+          <p class="hero__text">
+            Подбираем художественную литературу и детские книги.
+            Поможем найти издание, которое захочется перечитывать.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="catalog.html">Перейти в каталог</a>
+            <a class="button button--secondary" href="order.html">Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="advantages">
+      <div class="container">
+        <h2 class="section__title">Почему «Задушевный книжный»</h2>
+        <div class="advantages">
+          <article class="advantage">
+            <h3 class="advantage__title">Живая подборка</h3>
+            <p class="advantage__text">Не просто полки с книгами, а рекомендации под настроение и запрос.</p>
+          </article>
+          <article class="advantage">
+            <h3 class="advantage__title">Проверенные издания</h3>
+            <p class="advantage__text">Следим за качеством перевода и печати.</p>
+          </article>
+          <article class="advantage">
+            <h3 class="advantage__title">Помощь с выбором</h3>
+            <p class="advantage__text">Можно оставить заявку, и мы предложим 2–3 варианта.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="popular">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Популярные книги</h2>
+          <a class="section__link" href="catalog.html">Весь каталог</a>
+        </div>
+
+                <div class="product-grid">
+          <!-- 1. Понедельник начинается в субботу -->
+          <article class="product-card product-card--hit">
+            <span class="product-card__badge">Хит</span>
+            <img src="images/ponedel.jpg" alt="Обложка книги Понедельник начинается в субботу" class="product-card__cover">
+            <div class="product-card__body">
+              <p class="product-card__category">Фантастика</p>
+              <h3 class="product-card__title">Понедельник начинается в субботу</h3>
+              <p class="product-card__description">Аркадий и Борис Стругацкие. Институт чародейства и волшебства, где магия изучается с научным подходом.</p>
+              <p class="product-card__price">790 ₽</p>
+              <a class="button product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 2. Сияние -->
+          <article class="product-card product-card--new">
+            <span class="product-card__badge">Новинка</span>
+            <img src="images/sianie.jpg" alt="Обложка книги Сияние" class="product-card__cover">
+            <div class="product-card__body">
+              <p class="product-card__category">Мистика</p>
+              <h3 class="product-card__title">Сияние</h3>
+              <p class="product-card__description">Стивен Кинг. Семья Торрансов становится смотрителями отеля «Оверлук», где зло сводит с ума.</p>
+              <p class="product-card__price">640 ₽</p>
+              <a class="button product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 3. Любовник леди Чаттерлей -->
+          <article class="product-card product-card--discount">
+            <img src="images/ledy.jpg" alt="Обложка книги Любовник леди Чаттерлей" class="product-card__cover">
+            <div class="product-card__body">
+              <p class="product-card__category">Роман</p>
+              <h3 class="product-card__title">Любовник леди Чаттерлей</h3>
+              <p class="product-card__description">Д. Г. Лоуренс. История запретной любви, поиска физической и эмоциональной близости.</p>
+              <p class="product-card__price">520 ₽</p>
+              <a class="button product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <section class="section" id="contacts">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <p style="margin-bottom: 10px;">Телефон: 8 800 123-45-67</p>
+        <p style="margin-bottom: 20px;">Мы на связи ежедневно с 10:00 до 20:00</p>
+        <a class="button" href="contacts.html">Связаться с нами</a>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__text">© 2026 Ваш «Задушевный книжный». К читателю — с душой.</p>
+      <a class="site-footer__link" href="#top">Наверх</a>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Наверх" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button>
+
+  <dialog class="modal" id="orderModal">
+    <div class="modal__content">
+      <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+      <h2 class="modal__title">Заказать книгу</h2>
+      <p class="modal__text">Оставьте имя и телефон — подберём издание и свяжемся с вами.</p>
+      <form class="order-form" action="#" method="post">
+        <div class="order-form__field">
+          <label class="order-form__label" for="modal-name">Имя</label>
+          <input class="order-form__input" id="modal-name" name="name" type="text" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="modal-phone">Телефон</label>
+          <input class="order-form__input" id="modal-phone" name="phone" type="tel" required>
+        </div>
+        <button class="button order-form__submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — Задушевный книжный</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo" href="index.html">Задушевный книжный</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Книга</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">Каталог книг</h1>
+        
+        <div class="catalog-layout">
+          <!-- Блок фильтров (слева) -->
+          <aside class="filters">
+            <h2 class="filters__title">Жанры</h2>
+            <label class="filters__label"><input type="checkbox" checked> Фантастика</label>
+            <label class="filters__label"><input type="checkbox"> Мистика</label>
+            <label class="filters__label"><input type="checkbox"> Классика</label>
+            <label class="filters__label"><input type="checkbox"> Роман</label>
+            <label class="filters__label"><input type="checkbox"> Сказка</label>
+            
+            <h2 class="filters__title" style="margin-top: 20px;">Цена</h2>
+            <label class="filters__label"><input type="radio" name="price" checked> Любая</label>
+            <label class="filters__label"><input type="radio" name="price"> До 500 ₽</label>
+            <label class="filters__label"><input type="radio" name="price"> От 500 ₽</label>
+            <button class="button" type="button" style="width: 100%; margin-top: 20px;">Применить</button>
+          </aside>
+
+          <!-- Сетка товаров (справа) -->
+          <div class="product-grid product-grid--catalog">
+            <!-- 1 -->
+            <article class="product-card product-card--hit">
+              <span class="product-card__badge">Хит</span>
+              <img src="images/ponedel.jpg" alt="Обложка книги Понедельник начинается в субботу" class="product-card__cover">
+              <div class="product-card__body">
+                <p class="product-card__category">Фантастика</p>
+                <h3 class="product-card__title">Понедельник начинается в субботу</h3>
+                <p class="product-card__description">Стругацкие. Институт чародейства и волшебства.</p>
+                <p class="product-card__price">790 ₽</p>
+                <a class="button product-card__button" href="product.html">Подробнее</a>
+              </div>
+            </article>
+            <!-- 2 -->
+            <article class="product-card product-card--new">
+              <span class="product-card__badge">Новинка</span>
+              <img src="images/sianie.jpg" alt="Обложка книги Сияние" class="product-card__cover">
+              <div class="product-card__body">
+                <p class="product-card__category">Мистика</p>
+                <h3 class="product-card__title">Сияние</h3>
+                <p class="product-card__description">Стивен Кинг. Отель «Оверлук» и безумие.</p>
+                <p class="product-card__price">640 ₽</p>
+                <a class="button product-card__button" href="product.html">Подробнее</a>
+              </div>
+            </article>
+            <!-- 3 -->
+            <article class="product-card">
+              <img src="images/ledy.jpg" alt="Обложка книги Любовник леди Чаттерлей" class="product-card__cover">
+              <div class="product-card__body">
+                <p class="product-card__category">Роман</p>
+                <h3 class="product-card__title">Любовник леди Чаттерлей</h3>
+                <p class="product-card__description">Д. Г. Лоуренс. История запретной любви.</p>
+                <p class="product-card__price">520 ₽</p>
+                <a class="button product-card__button" href="product.html">Подробнее</a>
+              </div>
+            </article>
+            <!-- 4 -->
+            <article class="product-card">
+              <img src="images/palata.jpg" alt="Обложка книги Палата номер 6" class="product-card__cover">
+              <div class="product-card__body">
+                <p class="product-card__category">Классика</p>
+                <h3 class="product-card__title">Палата номер 6</h3>
+                <p class="product-card__description">А. П. Чехов. Размышления о жизни и безумии.</p>
+                <p class="product-card__price">450 ₽</p>
+                <a class="button product-card__button" href="product.html">Подробнее</a>
+              </div>
+            </article>
+            <!-- 5 -->
+            <article class="product-card">
+              <img src="images/alica.jpg" alt="Обложка книги Алиса в Стране Чудес" class="product-card__cover">
+              <div class="product-card__body">
+                <p class="product-card__category">Сказка</p>
+                <h3 class="product-card__title">Алиса в Стране Чудес</h3>
+                <p class="product-card__description">Льюис Кэрролл. Абсурд и приключения.</p>
+                <p class="product-card__price">590 ₽</p>
+                <a class="button product-card__button" href="product.html">Подробнее</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__text">© 2026 Ваш «Задушевный книжный». Всегда с душой к читателю.</p>
+      <a class="site-footer__link" href="#top">Наверх</a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Понедельник начинается в субботу — Задушевный книжный</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo" href="index.html">Задушевный книжный</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html">Книга</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="book-detail">
+          <!-- Обложка -->
+          <img src="images/ponedel.jpg" alt="Обложка книги Понедельник начинается в субботу" class="book-detail__cover">
+          
+          <!-- Информация -->
+          <div class="book-detail__info">
+            <p class="product-card__category">Фантастика</p>
+            <h1 class="book-detail__title">Понедельник начинается в субботу</h1>
+            <p class="book-detail__author">Автор: Аркадий и Борис Стругацкие</p>
+            
+            <p class="book-detail__desc">
+              Молодой программист Александр Привалов случайно попадает в Научно-исследовательский институт Чародейства и Волшебства (НИИЧАВО), где магия изучается с научным подходом, а будни сотрудников полны абсурдных и весёлых приключений.
+            </p>
+            
+            <p class="book-detail__price">790 ₽</p>
+            <button class="button" type="button" data-modal-open>Заказать книгу</button>
+          </div>
+        </div>
+
+        <!-- Таблица -->
+        <div class="specs">
+          <h2 class="specs__title">Характеристики издания</h2>
+          <table class="spec-table">
+            <caption>Подробные данные о книге</caption>
+            <thead>
+              <tr><th>Параметр</th><th>Значение</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Автор</td><td>Аркадий и Борис Стругацкие</td></tr>
+              <tr><td>Издательство</td><td>АСТ</td></tr>
+              <tr><td>Год выпуска</td><td>1965</td></tr>
+              <tr><td>Количество страниц</td><td>320</td></tr>
+              <tr><td>Переплет</td><td>Твердый</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__text">© 2026 Ваш "Задушевный книжный". Всегда с душой к читателю.</p>
+      <a class="site-footer__link" href="#top">Наверх</a>
+    </div>
+  </footer>
+
+    <!-- РАСШИРЕННОЕ МОДАЛЬНОЕ ОКНО -->
+  <dialog class="modal" id="orderModal">
+    <div class="modal__content">
+      <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+      <h2 class="modal__title">Заказать книгу</h2>
+      <p class="modal__text">Оставьте контакты, и мы свяжемся с вами для подтверждения заказа.</p>
+      
+      <form class="order-form" action="#" method="post">
+        <div class="order-form__field">
+          <label class="order-form__label" for="modal-name">Ваше имя *</label>
+          <input class="order-form__input" id="modal-name" name="name" type="text" required placeholder="Иван">
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="modal-email">E-mail *</label>
+          <input class="order-form__input" id="modal-email" name="email" type="email" required placeholder="ivan@example.com">
+        </div>
+        
+        <div class="order-form__field">
+          <label class="order-form__label" for="modal-phone">Телефон *</label>
+          <input class="order-form__input" id="modal-phone" name="phone" type="tel" required placeholder="+7 900 000-00-00">
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="modal-comment">Комментарий</label>
+          <textarea class="order-form__input" id="modal-comment" name="comment" rows="2" placeholder="Пожелания по заказу..."></textarea>
+        </div>
+
+        <div class="order-form__check" style="margin-bottom: 15px;">
+          <input id="modal-consent" name="consent" type="checkbox" required>
+          <label for="modal-consent">Я согласен на обработку персональных данных *</label>
+        </div>
+
+        <button class="button order-form__submit" type="submit" style="width: 100%;">Отправить заявку</button>
+      </form>
+    </div>
+  </dialog>
+  <script src="js/main.js"></script>
+</body>
+</html>
