@@ -7,7 +7,7 @@
 В проекте реализован многостраничный сайт книжного магазина. Сайт разработан только с использованием HTML и CSS, без сторонних фреймворков.
 
 ## Ссылка на опубликованный проект
-GitHub Pages: https://aleconick.github.io/kr1-html-css-shop/product.html
+GitHub Pages: https://aleconick.github.io/kr1-html-css-shop.html
 
 ## Страницы проекта
 - index.html — Главная страница (hero-блок, преимущества, популярные книги).
